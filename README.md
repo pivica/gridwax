@@ -1,26 +1,20 @@
 # Gridwax
 
-Vertical Rhythm is the spacing and arrangement between words as a user reads down the page. On the web, this is a difficult thing to get right, even with tools like [Compass](http://compass-style.org/reference/compass/typography/vertical_rhythm/) assisting. The problem really comes in when you have multiple columns of text. If you want text lines to consistently land in the same places, you really need a visual aid that you can quickly drop in at any point as a reference.
+Fork of original [Gridwax project](https://github.com/itsthatguy/gridwax).
 
-This is where the [Gridwax](http://gridwax.gs) bookmarklet comes in; Once you’ve got it secured on your bookmark bar, you can drop the overlay on your site, and use hotkeys to quickly adjust it to match your baseline.
+## Intro
 
-#### Where to get it: [gridwax.gs](http://gridwax.gs)
+Gridwax is very cool, but not very well maintained - so no new features and also lots of bugs are presented currently. Goal of this fork for now is to fix all bugs and do some code cleanup, when this is done we will see what is next ;)
 
+## How to use it
 
-## Hotkeys
+Due to security changes in github it is not any more possible to easily bookmark js code and execute it. For now easy workaround is to use [RawGit service](https://rawgit.com/). So your bookmark URL should look like this
 
-#### Adjust Vertical Spacing
-`shift+up`
-`shift+down`
+```
+javascript:(function()%7Bdocument.body.appendChild(document.createElement('script')).src='http://localhost/pivica/gridwax/gridwax.js';%7D)();
+```
 
-#### Adjust Vertical Offset
-`shift+left`
-`shift+right`
+## TODO
 
-![image](http://gridwax.gs/images/gridwax-overview.jpg)
-
-
-#### Read more about vertical rhythm:
-
-* [A List Apart - Setting Type on the Web to a Baseline Grid](http://www.alistapart.com/articles/settingtypeontheweb)
-* [Compass - Vertical Rhythm](http://compass-style.org/reference/compass/typography/vertical_rhythm/)
+* Check the code, test, and fix all bugs.
+* Remove jQuery dependency.
