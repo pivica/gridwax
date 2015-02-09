@@ -1,4 +1,4 @@
-(function() {
+(function($) {
   var GridWax, GridwaxLoader,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
@@ -337,4 +337,4 @@
     window.gridwax = new GridWax;
   }
 
-}).call(this);
+}).call(this, jQuery);
