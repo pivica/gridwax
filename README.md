@@ -1,6 +1,6 @@
 # Gridwax
 
-Fork of [Gridwax project](https://github.com/itsthatguy/gridwax).
+Fork of a [Gridwax project](https://github.com/itsthatguy/gridwax).
 
 ## Intro
 
@@ -14,7 +14,10 @@ Due to security changes in github it is not any more possible to easily bookmark
 javascript:(function()%7Bdocument.body.appendChild(document.createElement('script')).src='https://rawgit.com/pivica/gridwax/master/gridwax.js';%7D)();
 ```
 
+Gridwax is depending on jQuery for now so you need to preload jQuery on a page on which you want to use this plugin. This limitation will be removed in future and gridwax will not have external dependencies.
+
 ## TODO
 
 * Check the code, test, and fix all bugs.
 * Remove jQuery dependency.
+* Try to use local storage for storing values: vertical align, offset, color.
